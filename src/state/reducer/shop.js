@@ -10,11 +10,19 @@ const shop = (state = initialState, action) => {
             dublicate = a;
             return a;
         case "AREA":
-            let b = state.filter(item => item.area === action.data);
-            return b;
+            let b1 = state.filter(item => item.area === action.data);
+            let b2 = state.filter(item => item.area !== action.data);
+            if(b1.length > 0) {                
+                return [...b1, ...b2];
+            }
+            return state;
         case "CATEGORY":
-            let c = state.filter(item => item.category === action.data);
-            return c;
+            let c1 = state.filter(item => item.category === action.data);
+            let c2 = state.filter(item => item.category !== action.data);
+            if(c1.length > 0) {                
+                return [...c1, ...c2];
+            }
+            return state;
         case "SHOW_SHOPS":
             return dublicate;
         default:
