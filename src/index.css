@@ -1,0 +1,193 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+    color: gray;
+}
+
+
+/* NavBar.js */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 2%;
+    background-color: azure;
+}
+.navbar-logo > a{
+    font-size: 28px;
+    font-weight: bold;
+    text-decoration: none;
+    color: gray;
+}
+.navbar-logo > a:hover {
+    color: black;
+}
+.navbar-link {
+    text-decoration: none;
+    color: gray;
+}
+.navbar-link:hover {
+    color: black;
+}
+
+
+/* AddShops.js */
+
+.form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 3%;
+}
+.textInput {
+    width: 25%;
+    height: 40px;
+    font-size: 22px;
+    margin-bottom: 2px;
+}
+.errorMessage { 
+    color: red;
+    margin: 5px;
+}
+.dropdown {
+    width: 25%;
+    height: 40px;
+    font-size: 22px;
+    margin-bottom: 2px;
+}
+.openingInput {
+    width: 100%;
+    height: 40px;
+}
+.closeingInput {
+    width: 100%;
+    height: 40px;
+}
+.form > div {
+    width: 25%;
+}
+.form > button {
+    margin: 10px;
+    width: 25%;
+    height: 40px;
+    font-size: 22px;
+    color: black;
+}
+.form > header {
+    font-weight: bold;
+    font-size: 22px;
+    margin: 10px;
+}
+.success {
+    color: green;
+    margin: 2px;
+}
+
+/* home.js */
+
+.home {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    padding: 2% 3%;
+    margin: 15px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px lightgray;
+}
+.name {
+    font-size: 22px;
+    padding: 2px;
+}
+.area {
+    padding: 2px;
+}
+.category {
+    padding: 2px;
+}
+.date {
+    padding: 2px;
+}
+.delete {
+    margin-top: 5px;
+    padding: 5px;
+    color: black;
+}
+.filter {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.filter-select {
+    width: 20%;
+    margin: 5px;
+    height: 40px;
+}
+.showall {
+    width: 20%;
+    margin: 5px;
+    height: 40px;
+}
+
+/* media query */
+
+@media only screen and (max-width: 600px) {
+    .filter-select {
+        width: 30%;
+    }
+    .showall {
+        width: 30%;
+    }
+    .textInput {
+        width: 80%;
+        height: 40px;
+        font-size: 18px;
+        margin: 5px;
+    }
+    .errorMessage { 
+        color: red;
+        margin: 5px;
+    }
+    .dropdown {
+        width: 80%;
+        height: 40px;
+        font-size: 18px;
+        margin: 5px;
+    }
+    .openingInput {
+        width: 100%;
+        height: 40px;
+    }
+    .closeingInput {
+        width: 100%;
+        height: 40px;
+    }
+    .form > div {
+        width: 80%;
+    }
+    .form > button {
+        margin: 10px;
+        width: 80%;
+        height: 40px;
+        font-size: 22px;
+        color: black;
+    }
+    .form > header {
+        font-weight: bold;
+        font-size: 22px;
+        margin: 10px;
+    }
+    .success {
+        color: green;
+        margin: 2px;
+    }
+}
