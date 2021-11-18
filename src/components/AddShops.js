@@ -3,8 +3,11 @@ import * as Yup from "yup";
 import { useDispatch } from "react-redux";
 import { addShop } from "../state/action";
 import { useState } from "react";
+// import { useParams } from "react-router";
 
 const AddShops = () => {
+  // const a = useParams();
+  // console.log(a);
   const [submitOrNot, setSubmitOrNot] = useState(false);
   const dispatch = useDispatch();
   const formik = useFormik({

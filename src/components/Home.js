@@ -1,16 +1,8 @@
 import { useDispatch } from "react-redux";
 import { useSelector } from "react-redux";
 import { deleteShop, filterShop, showShop } from "../state/action";
-import ReactGA from 'react-ga';
-import { useEffect } from "react";
 
-import { withRouter } from "react-router-dom";
-ReactGA.initialize('G-8W242QMKEK');
 const Home = () => {
-  
-    useEffect(() => {
-        ReactGA.pageview(window.location.pathname + window.location.search);
-    });
   const shoplist = useSelector((state) => state.shop);
   let show = <h1>No Shop Found</h1>;
   const dispatch = useDispatch();
@@ -63,4 +55,4 @@ const Home = () => {
   );
 };
 
-export default withRouter(Home);
+export default Home;
