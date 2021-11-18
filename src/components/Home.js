@@ -2,6 +2,7 @@ import { useDispatch } from "react-redux";
 import { useSelector } from "react-redux";
 import { deleteShop, filterShop, showShop } from "../state/action";
 import ReactGA from 'react-ga';
+import { useEffect } from "react";
 
 import { withRouter } from "react-router-dom";
 ReactGA.initialize('G-8W242QMKEK');
