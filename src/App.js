@@ -4,7 +4,6 @@ import NavBar from "./components/NavBar";
 import Home from "./components/Home";
 // import InlineStyleComponent from "./examples/InlineStyleComponent";
 function App() {
-  <RouteChangeTracker />
   return (
     <div>
       {/* <InlineStyleComponent /> */}
